@@ -14,6 +14,8 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'sjl/vitality.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 
@@ -377,6 +379,15 @@ let g:NERDTreeWinSize = 20
 let g:NERDTreeIgnore = ['\.pyc$','\.class$','\.out$']
 
 let g:gitgutter_sign_column_always = 1
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 set mouse=a
 
