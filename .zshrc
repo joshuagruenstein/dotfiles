@@ -109,3 +109,4 @@ function google {
 }
 
 alias vi="/usr/local/bin/vim" && alias vim="/usr/local/bin/vim"
+alias apache="sudo /Applications/XAMPP/bin/apachectl"
