@@ -107,3 +107,5 @@ function google {
     base="https://www.google.com/#q=$@"
     chrome ${base// /+}
 }
+
+alias vi="/usr/local/bin/vim" && alias vim="/usr/local/bin/vim"
